@@ -29,12 +29,13 @@ return [
     |--------------------------------------------------------------------------
     */
     // The AWS region where you want Majordome work (us-east-1, eu-west-1, us-west-2, ...)
-    'aws.region' => 'us-east-1',
+
+    'aws.region' => '',
 
     // The AWS Account Id you want to analyze
-    'aws.accountId' => '419401113325',
-
-    // The Rules you want to apply
+    'aws.accountId' => '',
+   
+  // The Rules you want to apply
     'aws.rules' => [
         'DetachedEBS'                 => true, // Detect EBS Volume not attached to any EC2 instance
         'ELBWithoutMultipleInstances' => true, // Detect ELB with 0 or only 1 EC2 instance attached to them
